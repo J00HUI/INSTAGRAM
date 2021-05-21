@@ -19,7 +19,7 @@ class Forgot: UIViewController {
         // Layout //
         EmailTextField.layer.cornerRadius = 5
         EmailTextField.layer.borderWidth = 2
-        EmailTextField.layer.borderColor = CGColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)
+        EmailTextField.layer.borderColor = GrayColor
         
         NextButton.layer.cornerRadius = 5
 

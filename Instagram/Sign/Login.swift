@@ -22,11 +22,11 @@ class Login: UIViewController {
         
         EmailTextField.layer.cornerRadius = 5
         EmailTextField.layer.borderWidth = 2
-        EmailTextField.layer.borderColor = CGColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)
+        EmailTextField.layer.borderColor = GrayColor
         
         PasswordTextField.layer.cornerRadius = 5
         PasswordTextField.layer.borderWidth = 2
-        PasswordTextField.layer.borderColor = CGColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)
+        PasswordTextField.layer.borderColor = GrayColor
         
     }
     

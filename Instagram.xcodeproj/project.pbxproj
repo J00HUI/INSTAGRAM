@@ -23,6 +23,7 @@
 		157033822657C5EB0055F663 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157033812657C5EB0055F663 /* Me.swift */; };
 		157033862657C7580055F663 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157033852657C7580055F663 /* Intro.swift */; };
 		1570339D2657CB170055F663 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570339C2657CB170055F663 /* TabBar.swift */; };
+		157033A72657D6690055F663 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157033A62657D6690055F663 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		157033812657C5EB0055F663 /* Me.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
 		157033852657C7580055F663 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		1570339C2657CB170055F663 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		157033A62657D6690055F663 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		8888FF364D30EE3EFEC48A9A /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		A26A99AC244973BA72EBAD08 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 			children = (
 				1570337C2657C5A80055F663 /* Home.swift */,
 				157033812657C5EB0055F663 /* Me.swift */,
+				157033A62657D6690055F663 /* Cell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				1570330A2656973E0055F663 /* Begin.swift in Sources */,
 				157033822657C5EB0055F663 /* Me.swift in Sources */,
 				15703319265698DB0055F663 /* SupportingData.swift in Sources */,
+				157033A72657D6690055F663 /* Cell.swift in Sources */,
 				15703368265797F00055F663 /* Forgot.swift in Sources */,
 				157033102656982C0055F663 /* Login.swift in Sources */,
 				15703313265698500055F663 /* SignUp.swift in Sources */,
