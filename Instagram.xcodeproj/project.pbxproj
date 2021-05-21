@@ -18,6 +18,7 @@
 		15703313265698500055F663 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15703312265698500055F663 /* SignUp.swift */; };
 		15703319265698DB0055F663 /* SupportingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15703318265698DB0055F663 /* SupportingData.swift */; };
 		157033322657683C0055F663 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 157033312657683C0055F663 /* GoogleService-Info.plist */; };
+		15703368265797F00055F663 /* Forgot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15703367265797F00055F663 /* Forgot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		15703312265698500055F663 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		15703318265698DB0055F663 /* SupportingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingData.swift; sourceTree = "<group>"; };
 		157033312657683C0055F663 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15703367265797F00055F663 /* Forgot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forgot.swift; sourceTree = "<group>"; };
 		8888FF364D30EE3EFEC48A9A /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		A26A99AC244973BA72EBAD08 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				157033092656973E0055F663 /* Begin.swift */,
 				1570330F2656982C0055F663 /* Login.swift */,
 				15703312265698500055F663 /* SignUp.swift */,
+				15703367265797F00055F663 /* Forgot.swift */,
 			);
 			path = Sign;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				157032F526568ECE0055F663 /* AppDelegate.swift in Sources */,
 				1570330A2656973E0055F663 /* Begin.swift in Sources */,
 				15703319265698DB0055F663 /* SupportingData.swift in Sources */,
+				15703368265797F00055F663 /* Forgot.swift in Sources */,
 				157033102656982C0055F663 /* Login.swift in Sources */,
 				15703313265698500055F663 /* SignUp.swift in Sources */,
 				157032F726568ECE0055F663 /* SceneDelegate.swift in Sources */,
