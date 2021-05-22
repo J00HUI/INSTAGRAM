@@ -208,6 +208,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="HOME" id="PKc-eq-NMf"/>
                     <navigationItem key="navigationItem" id="nzC-8h-4Lm"/>
+                    <connections>
+                        <outlet property="CollectionView" destination="icU-bw-X2f" id="BEv-zC-1U8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lj0-42-LaX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

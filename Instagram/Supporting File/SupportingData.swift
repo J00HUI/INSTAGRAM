@@ -14,10 +14,14 @@ let StorageReference = Storage.storage().reference()
 
 //MARK: - Data
 class Post{
-    var ProfileImageName = String()
+    
+    var Key = String()
     var UserID = String()
     var ContentText = String()
-    var ContentImageName = String()
+    var ProfileImageURL = String()
+    var ContentImageURL = String()
+    //var ProfileImageName = String()
+    //var ContentImageName = String()
 }
 //Data_End
 
