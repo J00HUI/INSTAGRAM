@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EA89DCE3F514A402A30484E /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26A99AC244973BA72EBAD08 /* Pods_Instagram.framework */; };
+		151B942F2658C45C00B3DE64 /* UploadPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B942E2658C45C00B3DE64 /* UploadPost.swift */; };
 		157032F526568ECE0055F663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157032F426568ECE0055F663 /* AppDelegate.swift */; };
 		157032F726568ECE0055F663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157032F626568ECE0055F663 /* SceneDelegate.swift */; };
 		157032FC26568ECE0055F663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157032FA26568ECE0055F663 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		00FA700CB6FF7A66F083F78E /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
+		151B942E2658C45C00B3DE64 /* UploadPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPost.swift; sourceTree = "<group>"; };
 		157032F126568ECE0055F663 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157032F426568ECE0055F663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		157032F626568ECE0055F663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,8 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				1570337C2657C5A80055F663 /* Home.swift */,
-				157033812657C5EB0055F663 /* Me.swift */,
 				157033A62657D6690055F663 /* Cell.swift */,
+				157033812657C5EB0055F663 /* Me.swift */,
+				151B942E2658C45C00B3DE64 /* UploadPost.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				157033822657C5EB0055F663 /* Me.swift in Sources */,
 				15703319265698DB0055F663 /* SupportingData.swift in Sources */,
 				157033A72657D6690055F663 /* Cell.swift in Sources */,
+				151B942F2658C45C00B3DE64 /* UploadPost.swift in Sources */,
 				15703368265797F00055F663 /* Forgot.swift in Sources */,
 				157033102656982C0055F663 /* Login.swift in Sources */,
 				15703313265698500055F663 /* SignUp.swift in Sources */,

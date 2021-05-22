@@ -311,6 +311,21 @@
                                     <segue destination="yJC-0g-jRk" kind="show" identifier="toLogin" id="gbL-w0-gIj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC6-X6-3q1">
+                                <rect key="frame" x="20" y="38" width="233" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="UserName" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MU9-IW-Imv">
+                                <rect key="frame" x="20" y="184" width="359" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fbv-Gt-Ihf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -319,16 +334,18 @@
                     <connections>
                         <outlet property="ChangeProfileButton" destination="QQ4-Zo-klL" id="5he-bZ-bPl"/>
                         <outlet property="ProfileImage" destination="jRb-Gd-o15" id="dqU-2Z-Whv"/>
+                        <outlet property="UserIDLabel" destination="yC6-X6-3q1" id="ia1-DM-z7j"/>
+                        <outlet property="UserNameTextView" destination="MU9-IW-Imv" id="gc1-Q6-aSE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l59-hk-YXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3818.8405797101454" y="745.98214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Upload Post-->
         <scene sceneID="jMa-c9-7EN">
             <objects>
-                <viewController id="Nav-5B-Mys" sceneMemberID="viewController">
+                <viewController id="Nav-5B-Mys" customClass="UploadPost" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BLp-nH-cIf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,6 +369,9 @@
                                 <state key="normal" title="공유">
                                     <color key="titleColor" red="0.94901960780000005" green="0.71764705880000002" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Upload:" destination="Nav-5B-Mys" eventType="touchUpInside" id="50y-QH-c0P"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-Oh-UZH">
                                 <rect key="frame" x="26" y="64" width="42" height="33"/>
@@ -365,6 +385,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Tey-F3-pqE"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="DZb-rp-GS5" id="FHn-Qe-sq2"/>
+                        <outlet property="imageView" destination="spd-Um-hq0" id="YZg-pe-IsI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRM-Un-2rm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
