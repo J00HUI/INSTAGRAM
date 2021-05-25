@@ -8,5 +8,8 @@ class Cell: UICollectionViewCell {
     @IBOutlet weak var ContentImage: UIImageView!
     @IBOutlet weak var ContentText: UITextView!
     @IBOutlet weak var UserID2: UILabel!
-//Variable_End
+    @IBOutlet weak var LikeButton: UIButton!
+    @IBOutlet weak var LikeNumberButton: UIButton!
+    @IBOutlet weak var TimeLabel: UILabel!
+    //Variable_End
 }

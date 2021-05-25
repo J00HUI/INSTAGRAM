@@ -116,11 +116,14 @@
                                                     <rect key="frame" x="0.0" y="68" width="414" height="357"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HU-68-ulz">
-                                                    <rect key="frame" x="2" y="425" width="45" height="45"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HU-68-ulz">
+                                                    <rect key="frame" x="2" y="425" width="160" height="45"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" image="heart" catalog="system"/>
+                                                    <state key="normal" title=" 100" image="heart" catalog="system">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ng-Lp-KzG">
                                                     <rect key="frame" x="42" y="425" width="45" height="45"/>
@@ -140,13 +143,6 @@
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" image="bookmark" catalog="system"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="좋아요 0개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-Ux-uZv">
-                                                    <rect key="frame" x="15" y="469" width="391" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jj-LO-am6">
                                                     <rect key="frame" x="8" y="489" width="84" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -185,13 +181,24 @@
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-nY-dca">
+                                                    <rect key="frame" x="9" y="462" width="392" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <state key="normal" title="좋아요 10개">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="591"/>
                                         <connections>
                                             <outlet property="ContentImage" destination="DT5-xu-h8S" id="0fX-KJ-vVI"/>
                                             <outlet property="ContentText" destination="wI5-Lu-96j" id="hva-Kv-R1U"/>
+                                            <outlet property="LikeButton" destination="0HU-68-ulz" id="MUi-F3-x2c"/>
+                                            <outlet property="LikeNumberButton" destination="TAM-nY-dca" id="bdd-Gl-vIB"/>
                                             <outlet property="ProfileImage" destination="wSd-Cu-FU1" id="Akv-fR-lZi"/>
+                                            <outlet property="TimeLabel" destination="WWT-el-asp" id="qi3-o5-Bv0"/>
                                             <outlet property="UserID" destination="pi6-PF-e7E" id="G6f-gj-5H4"/>
                                             <outlet property="UserID2" destination="8jj-LO-am6" id="jEp-ux-V9U"/>
                                         </connections>
@@ -609,7 +616,7 @@
         <!--Sign Up-->
         <scene sceneID="NsX-Km-EnH">
             <objects>
-                <viewController id="8No-5W-1Fx" customClass="SignUp" sceneMemberID="viewController">
+                <viewController id="8No-5W-1Fx" customClass="SignUp" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lwQ-pN-SO6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -651,23 +658,19 @@
                                     <action selector="SignUp:" destination="8No-5W-1Fx" eventType="touchUpInside" id="She-ss-Ulh"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="이메일 주소" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="be8-Zm-ZBr">
-                                <rect key="frame" x="31" y="208" width="353" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="이메일 주소" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-p0-bJS">
+                                <rect key="frame" x="31" y="202" width="353" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.94117647059999998" green="0.79607843140000001" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="비밀번호" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0v8-8g-QnM">
-                                <rect key="frame" x="31" y="264" width="353" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="비밀번호" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGb-I3-3ps">
+                                <rect key="frame" x="31" y="256" width="353" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.94117647059999998" green="0.79607843140000001" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d8X-4e-ebd"/>
@@ -675,15 +678,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="bYT-9d-FSu"/>
                     <connections>
-                        <outlet property="EmailTextField" destination="be8-Zm-ZBr" id="Oi7-5Z-HL9"/>
-                        <outlet property="NextButton" destination="WLh-GY-tWt" id="qa5-fj-qDK"/>
-                        <outlet property="PasswordTextField" destination="0v8-8g-QnM" id="BAI-SA-2na"/>
+                        <outlet property="EmailTextField" destination="DOi-p0-bJS" id="qRM-0d-hqL"/>
+                        <outlet property="NextButton" destination="WLh-GY-tWt" id="Yi4-qr-Rn0"/>
+                        <outlet property="PasswordTextField" destination="BGb-I3-3ps" id="GlW-mQ-Bnd"/>
                         <segue destination="6pA-sZ-zpf" kind="show" identifier="toMain" id="5c9-EO-QUh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUT-Ob-GZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2445" y="76"/>
+            <point key="canvasLocation" x="2444.9275362318845" y="75.669642857142847"/>
         </scene>
         <!--Intro-->
         <scene sceneID="Bcp-AL-HEB">
@@ -742,9 +745,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sYs-YX-H1F"/>
+        <segue reference="5c9-EO-QUh"/>
         <segue reference="soU-dz-E6f"/>
-        <segue reference="gbL-w0-gIj"/>
+        <segue reference="Vuk-U5-jZ7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bookmark" catalog="system" width="112" height="128"/>

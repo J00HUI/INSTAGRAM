@@ -20,8 +20,8 @@ class Post{
     var ContentText = String()
     var ProfileImageURL = String()
     var ContentImageURL = String()
-    //var ProfileImageName = String()
-    //var ContentImageName = String()
+    var CheckLike = Bool()
+    var LikeNumber = Int()
 }
 //Data_End
 

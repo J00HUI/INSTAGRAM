@@ -4,10 +4,15 @@ import FirebaseAuth
 
 class SignUp: UIViewController {
 
+    //NextButton
+    //EmailTextField
+    //PasswordTextField
 //MARK: - Variable
-    @IBOutlet weak var NextButton: UIButton!
+    
     @IBOutlet weak var EmailTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var NextButton: UIButton!
+    
     //Variable_End
     
     override func viewDidLoad() {
@@ -86,12 +91,14 @@ class SignUp: UIViewController {
         Auth.auth().signIn(withEmail: EmailTextField.text!, password: PasswordTextField.text!, completion: {
             user, error in
             
-            let st = self.EmailTextField.text!
-            let index = st.firstIndex(of: "@")
-            let UserID = st[st.startIndex..<index!]
-            let UserData : [String : String] = ["UserID" : String(UserID), "UserName" : String(UserID), "ProfileImageURL" : "https://firebasestorage.googleapis.com/v0/b/instagram-1066b.appspot.com/o/ProfileImage%403x.png?alt=media&token=49eb2bc2-db5c-477e-8a91-c427bd48e4ba"]
-            let UserEmail = Auth.auth().currentUser?.uid
-            DatabaseReference.child("User").child(UserEmail!).updateChildValues(UserData)
+            if let st = self.EmailTextField.text{
+                let index = st.firstIndex(of: "@")
+                let UserID = st[st.startIndex..<index!]
+                let UserData : [String : String] = ["UserID" : String(UserID), "UserName" : String(UserID), "ProfileImageURL" : "https://firebasestorage.googleapis.com/v0/b/instagram-1066b.appspot.com/o/ProfileImage%403x.png?alt=media&token=49eb2bc2-db5c-477e-8a91-c427bd48e4ba"]
+                let UserEmail = Auth.auth().currentUser?.uid
+                DatabaseReference.child("User").child(UserEmail!).updateChildValues(UserData)
+                
+            }
             
             self.performSegue(withIdentifier: "toMain", sender: self)
         })
