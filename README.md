@@ -1,3 +1,2 @@
 # INSTAGRAM
-The First App Project </br>
-(It's not done yet.)
+The First App Project (It's not done yet.)
